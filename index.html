@@ -79,7 +79,7 @@
       return o;
     };
     $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
-      options.url = 'http://backbone-beginner.herokuapp.com' + options.url;
+      options.url = 'http://localhost:3000' + options.url;
     });
     var Users = Backbone.Collection.extend({
       url: '/users'
